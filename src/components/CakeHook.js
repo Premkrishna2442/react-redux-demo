@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { buyCake, restockCake } from "./redux";
 function CakeHook() {
-  const noofcakes = useSelector((state) => state.noofCakes);
+  const noofcakes = useSelector((state) => state.cake.noofCakes);
   const dispatch = useDispatch();
   const [count, setCount] = useState(1);
   return (
